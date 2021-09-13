@@ -10,7 +10,7 @@ public class Mercado {
 
         System.out.println("********** MERCADO **********");
         System.out.print("Digite seu nome: ");
-        nome = entrada.next();
+        nome = entrada.nextLine();
         System.out.printf("Olá, %s! Seja bem vindo(a) ao Mercado!\n\n", nome);
         System.out.print("Quantos produtos serão cadastrados? ");
         quantidade = entrada.nextInt();
@@ -25,19 +25,20 @@ public class Mercado {
 
         for (int n = 0; n < quantidade; n++) {
             System.out.printf("Digite o nome do %dº produto: ", n + 1);
-            nome = entrada.next();
+            nome = entrada.nextLine();
             System.out.printf("Digite a descrição do %dº produto: ", n + 1);
-            descricao = entrada.next();
+            descricao = entrada.nextLine();
             System.out.printf("Digite a categoria do %dº produto: ", n + 1);
-            categoria = entrada.next();
+            categoria = entrada.nextLine();
             System.out.printf("Digite o valor do %dº produto: R$", n + 1);
             valor = entrada.nextDouble();
 
-            validarCadastro(nome, descricao, categoria, valor);
+            exibirConfirmacao(nome, descricao, categoria, valor);
+            entrada.nextLine();
         }
     }
 
-    public static void validarCadastro(String nome, String descricao, String categoria, double valor) {
+    public static void exibirConfirmacao(String nome, String descricao, String categoria, double valor) {
         System.out.printf("\nO produto %s de descrição %s, categoria %s e valor R$%.2f foi cadastrado com sucesso!\n\n",
                 nome, descricao, categoria, valor);
     }
