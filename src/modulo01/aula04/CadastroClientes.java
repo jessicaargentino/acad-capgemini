@@ -5,10 +5,11 @@ import java.util.Scanner;
 public class CadastroClientes {
     public static void main(String[] args) {
         Scanner entrada = new Scanner(System.in);
-        String nome = "", sobrenome = "";
+        String nome, sobrenome;
         short idade;
 
         System.out.println("***** CADASTRO DE CLIENTES *****");
+        System.out.println("\nOlá! Seja bem vindo(a) ao cadastro de clientes!\n");
         System.out.print("Digite sua idade: ");
         idade = entrada.nextShort();
         entrada.nextLine();
