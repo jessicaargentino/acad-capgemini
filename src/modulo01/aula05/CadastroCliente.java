@@ -21,10 +21,10 @@ public class CadastroCliente {
 
             switch (opcao) {
                 case 1:
-                    cadastrarCliente(1);
+                    cadastrarCliente();
                     break;
                 case 2:
-                    listarCliente(2);
+                    listarCliente();
                     break;
                 case 3:
                     System.out.println("\nObrigada por utilizar nosso cadastro!");
@@ -36,16 +36,19 @@ public class CadastroCliente {
         } while (opcao != 3);
     }
 
-    public static void cadastrarCliente(int opcao) {
+    public static void cadastrarCliente() {
         Scanner entrada = new Scanner(System.in);
 
         System.out.println("\n***** CADASTRO DE CLIENTES *****");
         do {
             System.out.print("Digite seu nome: ");
             nome = entrada.nextLine();
+        } while (validaNome(nome) == false);
+
+        do {
             System.out.print("Digite seu sobrenome: ");
             sobrenome = entrada.nextLine();
-        } while (validaNome(nome, sobrenome) == false);
+        } while (validaSobrenome(sobrenome) == false);
 
         do {
             System.out.print("Digite seu RG: ");
@@ -60,11 +63,23 @@ public class CadastroCliente {
         System.out.printf("\n%s, seu cadastro foi realizado com sucesso!\n\n", nome);
     }
 
-    public static boolean validaNome(String nome, String sobrenome) {
+    public static boolean validaNome(String nome) {
         boolean valida = true;
 
-        if (nome.length() < 3 && sobrenome.length() < 3) {
-            System.out.println("Nome e sobrenome devem conter no mínimo 3 caracteres, tente novamente!");
+        if (nome.length() < 3) {
+            System.out.println("O nome deve conter no mínimo 3 caracteres, tente novamente!");
+            valida = false;
+        } else {
+            valida = true;
+        }
+        return valida;
+    }
+
+    public static boolean validaSobrenome(String sobrenome) {
+        boolean valida = true;
+
+        if (sobrenome.length() < 3) {
+            System.out.println("O sobrenome deve conter no mínimo 3 caracteres, tente novamente!");
             valida = false;
         } else {
             valida = true;
@@ -96,7 +111,7 @@ public class CadastroCliente {
         return valida;
     }
 
-    public static void listarCliente(int opcao) {
+    public static void listarCliente() {
 
         System.out.println("\n***** FICHA DE CADASTRO *****");
         System.out.printf("Nome cliente: %s %s\n", nome, sobrenome);
