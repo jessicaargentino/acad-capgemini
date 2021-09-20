@@ -40,7 +40,7 @@ public class RevisaoSemanal {
                 dado_valido = false;
             }
 
-            //EXEMPLO WHILE
+        //EXEMPLO WHILE
         } while (!dado_valido);
         entrada.close();
 
