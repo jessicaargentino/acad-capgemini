@@ -13,9 +13,7 @@ public class Calculadora {
         numero1 = lerNumero("\nDigite o 1º número: ");
         numero2 = lerNumero("Digite o 2º número: ");
 
-        numero2 = validaEntrada(numero2);
         imprimeCabecalhoOperacoes();
-
         imprimeResultado(numero1, numero2);
     }
 
@@ -31,15 +29,6 @@ public class Calculadora {
 
     static void imprimeCabecalhoOperacoes() {
         System.out.println("\n****** RESULTADO DAS OPERAÇÕES ******");
-    }
-
-    static double validaEntrada(double num2) {
-        System.out.println();
-        do {
-            System.out.print("O divisor não pode ser igual a 0, digite o 2º número novamente: ");
-            num2 = Double.parseDouble(entrada.nextLine());
-        } while (num2 == 0.0);
-        return num2;
     }
 
     static double adicao(double num1, double num2) {
