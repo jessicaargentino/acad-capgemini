@@ -14,7 +14,9 @@ public class MainProduto {
         produto2.nome = "Smartphone";
         produto2.descricao = "Telefone caro";
         produto2.valor = 13999.98;
-
+        
+        // IMPRESSÃO DO NÚMEROE DOS VALORES ARMAZENADOS NO ATRIBUTO NOME DE CADA
+        // INSTÂNCIA
         System.out.println(numero);
         System.out.println(produto1.nome);
         System.out.println(produto2.nome);
