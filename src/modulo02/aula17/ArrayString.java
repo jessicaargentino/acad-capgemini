@@ -19,5 +19,10 @@ public class ArrayString {
         for (int n = 0; n < nome.length; n++) {
             System.out.println(nome[n]);
         }
+
+        /* PERCORRENDO OS VALORES COM O FOREACH E OS IMPRIMINDO */
+        for (String nomes : nome) {
+            System.out.println(nomes);
+        }
     }
 }
