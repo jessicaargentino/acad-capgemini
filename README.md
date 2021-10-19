@@ -1,2 +1,2 @@
 # academia-capgemini
-Repositório dedicado às atividades realizadas na formação técnica Academia Capgemini.
+Repositório dedicado aos estudos e atividades realizados na formação técnica Academia Capgemini.
