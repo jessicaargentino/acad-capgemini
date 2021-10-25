@@ -2,7 +2,7 @@ package modulo02.aula30;
 
 import java.util.ArrayList;
 
-public class FaltThree {
+public class FaultThree {
     public static void main(String[] args) {
         int[] numbers = new int[5];
 
