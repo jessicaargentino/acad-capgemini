@@ -6,25 +6,25 @@ public class Main {
         Data data = new Data();
 
         People peopleOne = new People();
-        peopleOne.name = "Inês";
-        peopleOne.lastName = "Brasil";
-        peopleOne.age = 32;
+        peopleOne.name = "Laura";
+        peopleOne.lastName = "Palmer";
+        peopleOne.age = 17;
 
         Student student = new Student();
-        student.name = "Jojo";
-        student.lastName = "Calypso";
-        student.age = 38;
-        student.registration = "asdasd";
-        student.group = "Do fundao";
-        student.course = "VASP";
+        student.name = "Audrey";
+        student.lastName = "Horne";
+        student.age = 18;
+        student.registration = "972835";
+        student.group = "D";
+        student.course = "Sistemas de Informação";
 
         data.add(peopleOne);
         data.add(student);
 
         People peopleTwo = new People();
-        peopleTwo.name = "Inês";
-        peopleTwo.lastName = "Brasil";
-        peopleTwo.age = 32;
+        peopleTwo.name = "Laura";
+        peopleTwo.lastName = "Palmer";
+        peopleTwo.age = 17;
 
         boolean e = data.contains(peopleTwo);
         System.out.println(e);
