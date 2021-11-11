@@ -1,3 +1,6 @@
+#VSCode files
+.vscode
+
 # IntelliJ files
 .idea
 out
