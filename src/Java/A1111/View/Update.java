@@ -15,7 +15,7 @@ public class Update {
             Statement statement = connection.createStatement();
             String query = "UPDATE cidade SET nome = 'Bellory Hills' WHERE id = 1";
             statement.execute(query);
-            /** UpdateCount - retorna a quantidade de linhas afetadas no UPDATE */
+            /** UpdateCount - retorna quantidade de linhas afetadas no UPDATE */
             int linesAffecteds = statement.getUpdateCount();
             System.out.println(linesAffecteds);
 
