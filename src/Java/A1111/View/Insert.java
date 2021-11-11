@@ -20,7 +20,7 @@ public class Insert {
             ResultSet ids = statement.getGeneratedKeys();
             /**
              * Percorre enquanto houverem id's e pega o primeiro (último gerado). No banco,
-             * os ids sempre começam em 1.
+             * os ids sempre começam em 1
              */
             while (ids.next()) {
                 int id = ids.getInt(1);
