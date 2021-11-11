@@ -20,7 +20,7 @@ public class SelectTwo {
             ResultSet result = statement.getResultSet();
 
             /**
-             * Percorre os resultados, a cada entrada guarda o valor na variável e exibe na
+             * Percorre os resultados e a cada entrada guarda o valor na variável e exibe na
              * tela
              */
             while (result.next()) {
